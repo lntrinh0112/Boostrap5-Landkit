@@ -1,6 +1,16 @@
 * {
     box-sizing: border-box;
 }
+:root {
+    --bg-grey: #eaeaefe6;
+    --bg-dark: #1b2a4e;
+    --bg-brand:#869ab8;
+    --bg-price-info-item: #fff7f7;
+    --bg-footer-item-heading: #506690;
+    --bg-nav-item-hover : #335eea;
+    --bg-nav-item-text: #506690;
+}
+
 body {
     line-height: 38.4px;
     font-size: 17px;
@@ -13,12 +23,12 @@ body {
 }
 
 .nav-link {
-    color: #506690;
+    color: var(--bg-nav-item-text);
     line-height: 27.2px;
 }
 
 .nav-link:hover {
-    color: #335eea;
+    color: var(--bg-nav-item-hover);
 }
 
 
@@ -57,7 +67,7 @@ body {
 /* Brands */
 
 .list-brands {
-    color: #869ab8;
+    color: var(--bg-brand);
 }
 
 
@@ -65,11 +75,11 @@ body {
 .about-section,
 .estimonials-section,
 .price-section {
-    background-color: #eaeaefe6;
+    background-color: var(--bg-grey);
 }
 /* Card-form */ 
 .card {
-    border-color: #eaeaefe6;
+    border-color: var(--bg-grey);
 }
 .form-control:focus {
     outline: 0;
@@ -98,12 +108,13 @@ body {
 }
 
 .form-floating>label {
-    color: #869ab8;
+    color: var(--bg-brand);
     transform: translateY(-0.75rem);
 }
 
 .check-list-item {
-    height: 26px;
+    height: 1.5rem;
+    line-height: 13px;
 }
 
 /* Experience */
@@ -142,7 +153,7 @@ body {
 .card-text-footer {
     font-size: 14px;
     font-weight: 400;
-    color: #869ab8;
+    color: var(--bg-brand);
 }
 
 .carousel-control-next {
@@ -219,7 +230,7 @@ body {
 
 .price-info-left-item,
 .price-info-right-item {
-    background-color: #fff7f7;
+    background-color: var(--bg-price-info-item);
 }
 
 .price-info-left-item > .card {
@@ -228,7 +239,7 @@ body {
 /* FAQ */
 .faq-section,
 .cta-section {
-    background-color: #1b2a4e!important;
+    background-color: var(--bg-dark)!important;
 }
 
 .faq-section {
@@ -238,7 +249,7 @@ body {
 
 /* Footer */
 .footer-section {
-    background-color: #eaeaefe6;
+    background-color: var(--bg-grey);
 }
 
 a {
@@ -255,5 +266,5 @@ a {
 
 .footer-item-heading {
     font-size: 12px;
-    color: #506690;
+    color: var(--bg-footer-item-heading);
 }
